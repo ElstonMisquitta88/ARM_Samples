@@ -3,15 +3,19 @@
     "contentVersion": "1.0.0.0",
     "resources": [
         {
-            "name": "appstore17101988",
+             "name": "[concat(copyIndex(),'appstore46565634')]",
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2021-04-01",
             "location": "West India",
             "kind": "StorageV2",
             "sku": {
                 "name": "Standard_LRS"
-            }
-        }
+            },         
+            "copy" : { 
+                "name" :"storagecopy",
+                "count" : 3
+            } 
+        }          
 
     ] 
 }
