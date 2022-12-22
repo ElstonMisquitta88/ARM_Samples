@@ -11,4 +11,5 @@ ARM Template Samples for practise
 | `04_NetworkInterface_Existing` |  Creation of NetworkInterface with existing Virtual Network |
 | `05_NwInterface_NewNetwork` |  Creation of NetworkInterface with new Virtual Network using Depends clause |
 | `06_Variables` | Template with Variables |
-
+| `07_Template_Withparam` | Template with parameters |
+| `Parameter_For_07_Template` | Parameters file for 07_Template_Withparam template |
