@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+    "storagesku": {
+        "type": "string",
+        "defaultValue": "Standard_LRS",
+        "allowedValues": [
+        "Standard_LRS",
+        "Premium_LRS"
+        ]
+    }
+    },
+    "functions": [],
+    
+    "variables": {
+        "LocationName":"UK South"
+    },
+    "resources": [{
+        "name": "storageaccount198874571",
+        "type": "Microsoft.Storage/storageAccounts",
+        "apiVersion": "2021-04-01",
+        "tags": {
+            "displayName": "storageaccount1"
+        },
+        "location": "[variables('LocationName')]",
+        "kind": "StorageV2",
+        "sku": {
+            "name": "[parameters('storagesku')]"
+        }
+    }],
+    "outputs": {}
+}
